@@ -1,22 +1,171 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet">
 		<!-- <link rel="shortcut icon" href="@img/favicon.ico"> -->
-		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1752570244463"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1752570244463">
+		<title>Главная</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1752606539275"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1752606539275">
 	</head>
 	<body>
-		<div class="wrapper">
-			<header data-fls-header="" class="header">
+		<div data-fls-cursor="" class="wrapper">
+			<header data-fls-header-scroll="100" data-fls-header-scroll-show="" class="header">
 				<div class="header__container">
-					<div class="header__icon --icon-wa"></div>
+					<div class="header__body">
+						<a href="" class="header__logo">
+							<img src="./assets/img/logo.svg" alt="">
+						</a>
+						<div class="header__menu menu">
+							<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+								<span></span>
+							</button>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item menu__item--logo">
+										<a href="" class="menu__link">
+											<img src="./assets/img/logo.svg" alt="Изображение">
+										</a>
+									</li>
+									<li class="menu__item">
+										<a href="" class="menu__link">Главная</a>
+									</li>
+									<li class="menu__item">
+										<a href="" class="menu__link">Обо мне</a>
+									</li>
+									<li class="menu__item">
+										<a href="" class="menu__link">Навыки</a>
+									</li>
+									<li class="menu__item">
+										<a href="" class="menu__link">Портфолио</a>
+									</li>
+									<li class="menu__item">
+										<a href="" class="menu__link">Контакты</a>
+									</li>
+									<li class="menu__item menu__item--dynamic">
+										<a href="" class="menu__link"></a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<a data-fls-button="" data-fls-dynamic=".menu__item--dynamic,767.98" href="#" class="header__button button">Обсудить
+				проект</a>
+					</div>
 				</div>
 			</header>
-			<main class="pages page--home"></main>
+			<main class="pages page__home home">
+				<section class="home__top top-page">
+					<div class="top-page__container">
+						<div class="top-page__body">
+							<h1 class="top-page__title title">
+								Рысьев
+								<br>
+								Глеб
+							</h1>
+							<h2 class="top-page__subtitle">Front-end разработчик</h2>
+							<div class="top-page__language">
+								<a data-fls-button="" href="#" class="top-page__button">RU</a>
+								<span>|</span>
+								<a data-fls-button="" href="#" class="top-page__button">ENG</a>
+							</div>
+						</div>
+						<div class="top-page__cover">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/main/banner-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/main/banner-1200.webp" type="image/webp">
+								<img class="top-page__image ibg" alt="Изображение" src="./assets/img/main/banner.webp">
+							</picture>
+						</div>
+					</div>
+				</section>
+				<section class="home__about about">
+					<div class="about__container">
+						<h2 class="about__title title">Обо мне</h2>
+						<div class="about__text">
+							<p>Привет! Я Глеб Рысьев — Front-end разработчик</p>
+							<p>
+								Мой путь в разработке начался с глубокого интереса к созданию интуитивно понятных интерфейсов и
+					превращения идей в работающие цифровые продукты. Каждый новый проект для меня — это возможность учиться и
+					развиваться, создавая что-то действительно полезное и функциональное.
+							</p>
+							<p>
+								С августа 2024 года я активно сотрудничаю с компанией
+								<a target="_blank" href="https://seo18.ru/"></a>
+								SEO
+					технологии Ижевск, где
+					применяю свои навыки для
+					создания качественных веб-решений и развития digital-продуктов. Работа в команде профессионалов помогает
+					мне постоянно совершенствовать свои компетенции и быть в курсе последних тенденций веб-разработки.
+							</p>
+							<p>
+								Мой подход к работе основан на внимательном изучении требований заказчика и стремлении создать продукт,
+					который будет радовать пользователей своей функциональностью и удобством. Я верю, что качественный код и
+					внимание к деталям — ключ к успешному веб-проекту.
+							</p>
+							<p>
+								В свободное время увлекаюсь изучением новых технологий и современных подходов в разработке. Считаю, что
+					непрерывное обучение — это основа успеха в нашей динамичной профессии. Также практикую йогу, что помогает
+					поддерживать баланс между работой и личной жизнью. У меня замечательная семья — любимая супруга и две
+					прекрасные дочери, которые вдохновляют меня на новые свершения.
+							</p>
+							<p>
+								Готов воплощать ваши идеи в качественные веб-решения и создавать продукты, которые будут радовать
+					пользователей своей функциональностью и стильным дизайном.
+							</p>
+						</div>
+					</div>
+				</section>
+				<section class="home__skills skills">
+					<div class="skills__container">
+						<h2 class="skills__title title">Ключевые навыки</h2>
+						<div class="skills__body">
+							<div class="skills__item">
+								<img src="./assets/img/icons/html.svg" alt="Изображение">
+							</div>
+							<div class="skills__item">
+								<img src="./assets/img/icons/css.svg" alt="Изображение">
+							</div>
+							<div class="skills__item">
+								<img src="./assets/img/icons/scss.svg" alt="Изображение">
+							</div>
+							<div class="skills__item">
+								<img src="./assets/img/icons/js.svg" alt="Изображение">
+							</div>
+							<div class="skills__item">
+								<img src="./assets/img/icons/php.svg" alt="Изображение">
+							</div>
+							<div class="skills__item">
+								<img src="./assets/img/icons/wordpress.svg" alt="Изображение">
+							</div>
+							<div class="skills__item">
+								<img src="./assets/img/icons/figma.svg" alt="Изображение">
+							</div>
+							<div class="skills__item">
+								<img src="./assets/img/icons/photoshop.svg" alt="Изображение">
+							</div>
+							<div class="skills__item">
+								<img src="./assets/img/icons/react.svg" alt="Изображение">
+							</div>
+							<div class="skills__item">
+								<img src="./assets/img/icons/vue.svg" alt="Изображение">
+							</div>
+							<div class="skills__item">
+								<img src="./assets/img/icons/tailwind.svg" alt="Изображение">
+							</div>
+							<div class="skills__item">
+								<img src="./assets/img/icons/docker.svg" alt="Изображение">
+							</div>
+							<div class="skills__item">
+								<img src="./assets/img/icons/typescript.svg" alt="Изображение">
+							</div>
+							<div class="skills__item">
+								<img src="./assets/img/icons/github.svg" alt="Изображение">
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
 			<footer data-fls-footer="" class="footer">
 				<div class="footer__container"></div>
 			</footer>
