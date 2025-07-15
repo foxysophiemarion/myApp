@@ -1,13 +1,25 @@
 <!doctype html>
 <html lang="ru">
 	<head>
+		<style data-fls-preloader="false" rel="preload">
+			body>*:not(.fls-preloader) {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	[data-fls-preloader-loaded] body>*:not(.fls-preloader) {
+		transition: opacity 0.5s ease 0s;
+		opacity: 1;
+		visibility: visible;
+	}
+		</style>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet">
 		<!-- <link rel="shortcut icon" href="@img/favicon.ico"> -->
 		<title>Главная</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1752607707574"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1752607707574">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1752607775871"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1752607775871">
 	</head>
 	<body>
 		<div data-fls-cursor="" class="wrapper">
