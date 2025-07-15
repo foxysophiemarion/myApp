@@ -376,7 +376,6 @@ body {
     left: 0;
   }
   .menu__list {
-    font-size: 1.25rem;
     flex-direction: column;
     align-items: center;
   }
@@ -423,9 +422,6 @@ body {
     justify-items: flex-end;
     flex: content;
   }
-  .button {
-    font-size: 1.25rem;
-  }
   .home__top {
     padding-top: 7.875rem;
   }
@@ -455,9 +451,6 @@ body {
     margin-bottom: 1rem;
   }
   .menu__list {
-    font-size: 0.75rem;
-  }
-  .menu__list {
     gap: 1rem;
   }
   .button {
@@ -471,9 +464,6 @@ body {
   }
   .button {
     padding-right: 1rem;
-  }
-  .button {
-    font-size: 0.75rem;
   }
   .home__about {
     padding-top: 3.125rem;
@@ -500,15 +490,20 @@ body {
     gap: 1rem;
   }
 }
+@media (min-width: 18.75em) and (max-width: 47.99875em) {
+  .menu__list {
+    font-size: clamp( 1.25rem , 1.25rem  +  0vw , 1.25rem );
+  }
+  .button {
+    font-size: clamp( 1.25rem , 1.25rem  +  0vw , 1.25rem );
+  }
+}
 @media (min-width: 20em) and (max-width: 92.125em) {
   .title {
     font-size: clamp( 2rem , 1.7227036395125rem  +  1.3864818024vw , 3rem );
   }
   .title {
     margin-bottom: clamp( 1rem , 0.16811091854375rem  +  4.1594454073vw , 4rem );
-  }
-  .menu__list {
-    font-size: clamp( 0.75rem , 0.68067590988125rem  +  0.3466204506vw , 1rem );
   }
   .menu__list {
     gap: clamp( 1rem , 0.7227036395125rem  +  1.3864818024vw , 2rem );
@@ -524,9 +519,6 @@ body {
   }
   .button {
     padding-right: clamp( 1rem , 0.584055459275rem  +  2.0797227036vw , 2.5rem );
-  }
-  .button {
-    font-size: clamp( 0.75rem , 0.68067590988125rem  +  0.3466204506vw , 1rem );
   }
   .home__about {
     padding-top: clamp( 3.125rem , 2.25844887348125rem  +  4.3327556326vw , 6.25rem );
@@ -553,6 +545,14 @@ body {
     gap: clamp( 1rem , 0.7227036395125rem  +  1.3864818024vw , 2rem );
   }
 }
+@media (min-width: 47.99875em) and (max-width: 120em) {
+  .menu__list {
+    font-size: clamp( 0.875rem , 0.7916702835rem  +  0.1736080971vw , 1rem );
+  }
+  .button {
+    font-size: clamp( 0.875rem , 0.7916702835rem  +  0.1736080971vw , 1rem );
+  }
+}
 @media (min-width: 47.99875em) {
   .menu__item--dynamic {
     display: none;
@@ -569,9 +569,6 @@ body {
     margin-bottom: 4rem;
   }
   .menu__list {
-    font-size: 1rem;
-  }
-  .menu__list {
     gap: 2rem;
   }
   .button {
@@ -585,9 +582,6 @@ body {
   }
   .button {
     padding-right: 2.5rem;
-  }
-  .button {
-    font-size: 1rem;
   }
   .home__about {
     padding-top: 6.25rem;
