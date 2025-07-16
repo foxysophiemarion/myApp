@@ -523,6 +523,9 @@ textarea.input {
   border-radius: 3.125rem;
   overflow: hidden;
 }
+.top-page__cover picture {
+  display: block !important;
+}
 .top-page__image {
   max-height: 40rem;
 }
