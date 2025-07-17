@@ -19,15 +19,17 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet">
 		<!-- <link rel="shortcut icon" href="@img/favicon.ico"> -->
 		<title>Главная</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1752673532939"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1752673532939">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1752734545042"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1752734545042">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1752734545042">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1752734545042">
 	</head>
 	<body data-fls-cursor="">
 		<div class="wrapper">
-			<header data-fls-header-scroll="100" data-fls-header-scroll-show="" class="header">
+			<header data-fls-header="" data-fls-header-scroll="100" data-fls-header-scroll-show="" class="header">
 				<div class="header__container">
 					<div class="header__body">
-						<a href="" class="header__logo">
+						<a href="" data-fls-scrollto=".top-page" class="header__logo">
 							<img src="./assets/img/logo.svg" alt="">
 						</a>
 						<div class="header__menu menu">
@@ -37,24 +39,24 @@
 							<nav class="menu__body">
 								<ul class="menu__list">
 									<li class="menu__item menu__item--logo">
-										<a href="" class="menu__link">
+										<a data-fls-scrollto=".top-page" href="" class="menu__link">
 											<img src="./assets/img/logo.svg" alt="Изображение">
 										</a>
 									</li>
-									<li class="menu__item">
-										<a href="" class="menu__link">Главная</a>
+									<li class="menu__item menu__item--home">
+										<a href="/" class="menu__link">Главная</a>
 									</li>
 									<li class="menu__item">
-										<a href="" class="menu__link">Обо мне</a>
+										<a data-fls-scrollto-header="" data-fls-scrollto="#about" href="" class="menu__link">Обо мне</a>
 									</li>
 									<li class="menu__item">
-										<a href="" class="menu__link">Навыки</a>
+										<a data-fls-scrollto-header="" data-fls-scrollto="#skills" href="" class="menu__link">Навыки</a>
 									</li>
-									<li class="menu__item">
-										<a href="" class="menu__link">Портфолио</a>
+									<li class="menu__item menu__item--portfolio">
+										<a data-fls-scrollto-header="" data-fls-scrollto="#portfolio" href="" class="menu__link">Портфолио</a>
 									</li>
-									<li class="menu__item">
-										<a href="" class="menu__link">Контакты</a>
+									<li class="menu__item menu__item--contacts">
+										<a data-fls-scrollto-header="" data-fls-scrollto="#contacts" href="" class="menu__link">Контакты</a>
 									</li>
 									<li class="menu__item menu__item--dynamic">
 										<a href="" class="menu__link"></a>
@@ -62,15 +64,14 @@
 								</ul>
 							</nav>
 						</div>
-						<a data-fls-button="" data-fls-dynamic=".menu__item--dynamic,767.98" href="#" class="header__button button">Обсудить
-				проект</a>
+						<a data-fls-popup-link="popup" data-fls-button="" data-fls-dynamic=".menu__item--dynamic,767.98" href="#" class="header__button button">Обсудить проект</a>
 					</div>
 				</div>
 			</header>
 			<main class="pages page__home home">
-				<section data-fls-gsap="" data-gsap-type="fade-scale" class="home__top top-page">
+				<section class="home__top top-page">
 					<div class="top-page__container">
-						<div data-gsap-item="" class="top-page__body">
+						<div class="top-page__body">
 							<h1 class="top-page__title title">
 								Рысьев
 								<br>
@@ -83,7 +84,7 @@
 								<a data-fls-button="" href="#" class="top-page__button">ENG</a>
 							</div>
 						</div>
-						<div data-gsap-item="" data-fls-splittype="" class="top-page__cover">
+						<div class="top-page__cover">
 							<picture>
 								<source media="(max-width: 600px)" srcset="./assets/img/main/banner-600.webp" type="image/webp">
 								<source media="(max-width: 1200px)" srcset="./assets/img/main/banner-1200.webp" type="image/webp">
@@ -92,10 +93,10 @@
 						</div>
 					</div>
 				</section>
-				<section data-fls-gsap="" data-gsap-type="slide-right" class="home__about about">
+				<section data-fls-watcher="navigator" id="about" class="home__about about">
 					<div class="about__container">
 						<h2 class="about__title title">Обо мне</h2>
-						<div class="about__text">
+						<div data-fls-gsap="" data-gsap-type="slide-right" class="about__text">
 							<p data-gsap-item="">Привет! Я Глеб Рысьев — Front-end разработчик</p>
 							<p data-gsap-item="">
 								Мой путь в разработке начался с глубокого интереса к созданию интуитивно понятных
@@ -133,7 +134,7 @@
 						</div>
 					</div>
 				</section>
-				<section data-fls-gsap="" data-gsap-type="wave" class="home__skills skills">
+				<section data-fls-watcher="navigator" id="skills" data-fls-gsap="" data-gsap-type="wave" class="home__skills skills">
 					<div class="skills__container">
 						<h2 class="skills__title title">Ключевые навыки</h2>
 						<div class="skills__body">
@@ -182,7 +183,7 @@
 						</div>
 					</div>
 				</section>
-				<section data-fls-gsap="" data-gsap-type="fade-stagger" class="home__portfolio portfolio">
+				<section data-fls-watcher="navigator" id="portfolio" data-fls-gsap="" data-gsap-type="fade-stagger" class="home__portfolio portfolio">
 					<div class="portfolio__container">
 						<h2 class="portfolio__title title">Портфолио</h2>
 						<!-- Оболочка слайдера -->
@@ -268,11 +269,11 @@
 							<button type="button" class="swiper-button-next --icon-arrow-right"></button>
 							<!-- Если нужен скроллбар -->
 						</div>
-						<a data-fls-button="" href="#" class="portfolio__button button">Посмотреть все</a>
+						<a data-fls-button="" href="portfolio.html" class="portfolio__button button">Посмотреть все</a>
 					</div>
 				</section>
 			</main>
-			<footer data-fls-footer="" class="footer">
+			<footer data-fls-watcher="navigator" id="contacts" data-fls-footer="" class="footer">
 				<div class="footer__container">
 					<h2 class="footer__title title">Контакты</h2>
 					<div class="footer__body">
@@ -318,8 +319,8 @@ fill="none" xmlns="http://www.w3.org/2000/svg">
 								<h2 class="form-feedback__title title">Оставить заявку</h2>
 								<form data-fls-form="" action="files/sendmail/sendmail.php" method="POST">
 									<input data-fls-input="" type="text" name="form[name]" placeholder="Имя" class="input">
-									<input required data-fls-input="" type="text" name="form[email]" data-error="Некорректный e-mail" placeholder="E-mail*" class="input">
-									<input required data-fls-input="" data-fls-input-mask="+7(999) 999-9999" type="text" name="form[phone]" data-error="Некорректный номер телефона" placeholder="Номер телефона*" class="input">
+									<input required data-fls-input="" type="email" name="form[email]" placeholder="E-mail*" class="input">
+									<input required data-fls-input="" data-fls-input-mask="+7(999) 999-9999" type="phone" name="form[phone]" placeholder="Номер телефона*" class="input">
 									<textarea data-fls-input="" data-fls-input-autoheight="" autocomplete="off" name="form[service]" placeholder="Требуемая услуга" class="input"></textarea>
 									<label data-fls-checkbox="" class="checkbox">
 										<input required data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
