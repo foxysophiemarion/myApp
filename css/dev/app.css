@@ -562,6 +562,18 @@ textarea.input {
   writing-mode: vertical-lr;
   transform: rotate(180deg);
 }
+.top-page__language .language-switch {
+  transition: color 0.3s;
+}
+.top-page__language .language-switch.active {
+  color: var(--orange-color);
+}
+.top-page__button {
+  transition: color 0.3s;
+}
+.top-page__button:hover {
+  color: var(--orange-color);
+}
 .top-page__cover {
   border-radius: 3.125rem;
   overflow: hidden;
