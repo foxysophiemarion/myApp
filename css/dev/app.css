@@ -159,7 +159,6 @@ body {
   color: var(--main-color);
   font-family: var(--mainFont);
   font-size: 1rem;
-  background: url("../assets/img/main/bg.webp") 0 0/20rem repeat;
 }
 [data-fls-scrolllock] body {
   overflow: hidden;
@@ -171,6 +170,25 @@ body {
   display: flex;
   flex-direction: column;
   overflow: clip;
+  position: relative;
+  z-index: 1;
+}
+.wrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+}
+.wrapper::before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  filter: blur(0.625rem);
+  background: url("../assets/img/main/banner.webp") 0 0/cover no-repeat;
 }
 .wrapper > main {
   flex: 1 1 auto;
@@ -562,6 +580,8 @@ textarea.input {
   color: var(--orange-color);
 }
 .top-page__cover {
+  box-shadow: 0 0 0.9375rem rgba(0, 0, 0, 0.5);
+  max-height: 40rem;
   border-radius: 3.125rem;
   overflow: hidden;
 }
