@@ -17,19 +17,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="robots" content="noindex, nofollow">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet">
-		<!-- <link rel="shortcut icon" href="@img/favicon.ico"> -->
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Главная</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1752748588783"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1752748588783">
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1752748588783">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1752748588783">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1752818277896"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js?v=1752818277896">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1752818277896">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1752818277896">
 	</head>
-	<body data-fls-cursor="">
+	<!-- <script type="module" src="@сomponents/lang/language.js?v=1752818277896"></script> -->
+	<body data-fls-language="" data-fls-cursor="">
 		<div class="wrapper">
 			<header data-fls-header="" data-fls-header-scroll="100" data-fls-header-scroll-show="" class="header">
 				<div class="header__container">
 					<div class="header__body">
-						<a href="" data-fls-scrollto=".top-page" class="header__logo">
+						<a href="" data-fls-scrollto="#top" class="header__logo">
 							<img src="./assets/img/logo.svg" alt="">
 						</a>
 						<div class="header__menu menu">
@@ -39,24 +40,22 @@
 							<nav class="menu__body">
 								<ul class="menu__list">
 									<li class="menu__item menu__item--logo">
-										<a data-fls-scrollto=".top-page" href="" class="menu__link">
-											<img src="./assets/img/logo.svg" alt="Изображение">
-										</a>
+										<img src="./assets/img/logo.svg" alt="Изображение">
 									</li>
 									<li class="menu__item menu__item--home">
-										<a href="/" class="menu__link">Главная</a>
+										<a href="/" class="menu__link"></a>
 									</li>
 									<li class="menu__item">
-										<a data-fls-scrollto-header="" data-fls-scrollto="#about" href="" class="menu__link">Обо мне</a>
+										<a data-fls-scrollto-header="" data-fls-scrollto="#about" href="" class="menu__link"></a>
 									</li>
 									<li class="menu__item">
-										<a data-fls-scrollto-header="" data-fls-scrollto="#skills" href="" class="menu__link">Навыки</a>
+										<a data-fls-scrollto-header="" data-fls-scrollto="#skills" href="" class="menu__link"></a>
 									</li>
 									<li class="menu__item menu__item--portfolio">
-										<a data-fls-scrollto-header="" data-fls-scrollto="#portfolio" href="" class="menu__link">Портфолио</a>
+										<a data-fls-scrollto-header="" data-fls-scrollto="#portfolio" href="" class="menu__link"></a>
 									</li>
 									<li class="menu__item menu__item--contacts">
-										<a data-fls-scrollto="#contacts" href="" class="menu__link">Контакты</a>
+										<a data-fls-scrollto-header="" data-fls-scrollto="#contacts" href="" class="menu__link"></a>
 									</li>
 									<li class="menu__item menu__item--dynamic">
 										<a href="" class="menu__link"></a>
@@ -64,12 +63,12 @@
 								</ul>
 							</nav>
 						</div>
-						<a data-fls-popup-link="popup" data-fls-button="" data-fls-dynamic=".menu__item--dynamic,767.98" href="#" class="header__button button">Обсудить проект</a>
+						<a data-fls-popup-link="popup" data-fls-button="" data-fls-dynamic=".menu__item--dynamic,767.98" href="#" class="header__button button"></a>
 					</div>
 				</div>
 			</header>
 			<main class="pages page__home home">
-				<section class="home__top top-page">
+				<section id="top" class="home__top top-page">
 					<div class="top-page__container">
 						<div class="top-page__body">
 							<h1 class="top-page__title title"></h1>
@@ -245,9 +244,9 @@
 			</main>
 			<footer data-fls-watcher="navigator" id="contacts" data-fls-footer="" class="footer">
 				<div class="footer__container">
-					<h2 class="footer__title title">Контакты</h2>
+					<h2 class="footer__title title"></h2>
 					<div class="footer__body">
-						<p class="footer__text">Вы можете связаться со мной любым удобным способом</p>
+						<p class="footer__text"></p>
 						<div class="footer__icons">
 							<a target="_blank" data-fls-button="" href="https://t.me/nidra_fsm" class="footer__link --icon-tg"></a>
 							<a target="_blank" data-fls-button="" href="https://wa.me/+79953088199" class="footer__link --icon-wa"></a>
@@ -255,17 +254,13 @@
 							<a target="_blank" data-fls-button="" href="https://github.com/foxysophiemarion" class="footer__link --icon-gh"></a>
 						</div>
 						<a data-fls-button="" href="tel:+79953088199" class="footer__phone">+7 995 308 81 99</a>
-						<p class="footer__text">или</p>
-						<a data-fls-button="" data-fls-popup-link="popup" href="#" class="footer__button button">Оставить заявку</a>
+						<p class="footer__text footer__text--min"></p>
+						<a data-fls-button="" data-fls-popup-link="popup" href="#" class="footer__button button"></a>
 					</div>
 					<div class="footer__bottom bottom-footer">
-						<p class="bottom-footer__offerta">
-							Данный сайт является личным портфолио и содержит информацию о
-				профессиональной деятельности. Все предложения об оказании услуг являются предварительными и требуют
-				подтверждения в рамках официального договора
-						</p>
-						<a href="" class="bottom-footer__privacy">Политика конфинденциальности</a>
-						<p class="bottom-footer__copy">Copyright © 2025 Глеб Рысьев</p>
+						<p class="bottom-footer__offerta"></p>
+						<a href="" class="bottom-footer__privacy"></a>
+						<p class="bottom-footer__copy"></p>
 					</div>
 				</div>
 			</footer>
