@@ -553,7 +553,7 @@ textarea.input {
 .top-page__title {
   text-align: left;
   flex: 0 1 25%;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 .top-page__subtitle {
   flex: 0 1 50%;
